@@ -11,7 +11,9 @@ class UserDisplay extends Component {
       
       return (
           <div>
+            <h1> LIST OF ALL USER (CLICK ANY USER TO SHOW USER INFORMATION)</h1>
         <h1>{this.props.Users.map((item, i)=><li key={i} onClick={()=>{this.props.Userclicked(item)}}>{item.name}</li>)}</h1>
+         <h1>Selected User information will be display Below:</h1>
          <Userinfo/>
         </div> 
     );

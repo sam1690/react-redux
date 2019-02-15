@@ -4,6 +4,7 @@ class Userinfo extends Component {
     render() {
       
       return (
+          
           <h1>{this.props.Userclick.name}</h1>
           
     );
